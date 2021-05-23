@@ -1,0 +1,122 @@
+:root {
+  --vdblue: #090b1a;
+  /*main background*/
+  --desablue: #1b1938;
+  /*card background*/
+  --softViolet: #aa5cdb;
+  /*Accent*/
+  --bgViolet: hsl(295, 83%, 14%);
+  /*Accent*/
+  --White: #ffffff;
+  /*(main heading, stats)*/
+  --stwhite: #ffffffbf;
+  /*main paragraph*/
+  --stwhite: #ffffff99;
+  /*stat heading*/ }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--vdblue);
+  color: var(--White); }
+
+section {
+  border-radius: 8px;
+  background-color: var(--desablue);
+  margin: 10px auto 0;
+  width: 340px;
+  overflow: hidden;
+  text-align: center; }
+
+.bg-image {
+  background-image: url(images/image-header-mobile.jpg);
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .bg-image .bg {
+    height: 250px;
+    background-color: var(--bgViolet);
+    opacity: 0.6; }
+
+.description {
+  padding: 1.5rem 1rem 0.4rem; }
+
+h2 {
+  margin: 1rem auto; }
+
+h2 span {
+  color: var(--softViolet); }
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--stwhite);
+  margin: 0.4rem auto 1rem; }
+
+h3 {
+  margin-bottom: 0.4rem; }
+
+h4 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  color: var(--stwhite); }
+
+.meta {
+  padding: 0.8rem auto;
+  margin: 0.5rem auto; }
+
+.stats {
+  margin-bottom: 1rem; }
+
+footer {
+  margin: 0.5rem auto; }
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+@media (min-width: 750px) {
+  body {
+    margin: 10% auto; }
+
+  section {
+    display: flex;
+    text-align: left;
+    width: 75%;
+    height: 340px; }
+
+  .bg-image {
+    background-image: url(images/image-header-desktop.jpg);
+    order: 2;
+    width: 50%;
+    height: 100%;
+    background-size: cover; }
+    .bg-image .bg {
+      height: 100%; }
+
+  .description {
+    padding: 1.5rem 3rem 1rem;
+    width: 50%;
+    height: 100%; }
+
+  p {
+    margin: 8% auto; }
+
+  .meta {
+    display: flex;
+    margin: 1.8rem auto;
+    order: 1; }
+
+  .stats {
+    margin-right: 8%; } }
+
+
